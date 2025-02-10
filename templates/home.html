@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - QR Attendance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the QR Attendance System</h1>
+    
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('participants') }}">View Registered</a></li>
+            <li><a href="{{ url_for('attendees') }}">View Attended</a></li>
+            <li><a href="{{ url_for('scanner') }}">Mark Attendance</a></li>
+            <li><a href="{{ url_for('send_qr_email') }}">Send QR Email</a></li>
+            <li><a href="{{ url_for('set_sheet') }}">Update Sheets Link</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

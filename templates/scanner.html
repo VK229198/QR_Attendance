@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event QR Attendance</title>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+    <h1>Event Attendance System</h1>
+
+    <div>
+        <h2>Scan QR Code</h2>
+        <button id="start-scan">Start Scanning</button>
+        <div id="qr-video" width="300" height="300" style="border: 1px solid black;"></div>
+        <p id="scan-result"></p>
+    </div>
+
+    <script src="static\qr-scanner.js"></script>
+</body>
+</html>
